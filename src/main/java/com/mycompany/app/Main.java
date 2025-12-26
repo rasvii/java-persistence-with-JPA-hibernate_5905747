@@ -7,11 +7,12 @@ import com.mycompany.app.entities.Book;
 
 import jakarta.persistence.EntityManager;
 
+
 public class Main {
   public static void main(String[] args) {
     System.out.println("Hello from Java!");
 
-    EntityManagerFactory emf = Persistence.createEntityManagerFactory("artclass_persistence_unit");
+    EntityManagerFactory emf = Persistence.createEntityManagerFactory("library_persistence_unit");
     EntityManager em = emf.createEntityManager();
 
     try {
